@@ -9,3 +9,7 @@ def error_handler(request: HttpRequest, status_code: int) -> HttpResponse:
         'status_code_error': status_code
     }
     return render(request, "errors.html", context)
+
+
+def index(request: HttpRequest) -> HttpResponse:
+    return render(request, "mainapp/index.html")
