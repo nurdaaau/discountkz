@@ -13,16 +13,16 @@
     <title>DiscountKz</title>
 </head>
 <body>
-
-<div class='header'>
+{% load static %}
+<div class='header' style="background-image: url('{% static "/mainapp/img/bg.jpg" %}')">
     <div class='container'>
         <div class='header-line'>
             <div class='header-logo'>
                 {% load static %} <img src="{% static 'mainapp/img/logo.png' %}" alt="">
             </div>
 
-            <div class='nav'>
-                <a class='nav-item' href="#">ГЛАВНАЯ</a>
+            <div class='nav' id="nav">
+                <a class='nav-item'  href="#">ГЛАВНАЯ</a>
                 <a class='nav-item' href="#">МЕНЮ</a>
                 <a class='nav-item' href="#">О НАС</a>
                 <a class='nav-item' href="#">БРОНЬ</a>
